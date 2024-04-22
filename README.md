@@ -7,7 +7,7 @@
         <td style="color:#000;">#FFFFFF</td>
     </tr>
     <tr style="background-color:#FEC828;">
-        <td style="color:#333333; ">#FEC828</td>
+        <td> <font color:'#333333'>#FEC828</font></td>
     </tr>
     <tr style="background-color: #688272;">
         <td>#688272</td>
