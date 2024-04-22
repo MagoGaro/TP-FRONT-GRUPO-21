@@ -1,55 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME GRECO</title>
-  <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/menu.css">
+
+    <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <header>
-    <nav class="nav">
-      <div>
-        <img src="./img/Logo_Greco.svg" alt="Logo-de-la-empresa">
-      </div>
-      <ul class="list">
-        <li class="item">
-          <a class="link" href="#">Home</a>
-        </li>
-        <li class="item">
-          <span class="link">Productos</span>
-          <!--<ul class="sublist">
-            <li class="subitem">
-              <a class="sublink" href="#">Línea Baño</a>
-            </li>
-            <li class="subitem">
-              <a class="sublink" href="#">Línea Home</a>
-            </li>
-            <li class="subitem">
-              <a class="sublink" href="#">Línea Jardín</a>
-            </li>
-          </ul>-->
-        </li>
-        <li class="item">
-          <a class="link" href="#">Shop</a>
-        </li>
-        <li class="item">
-          <a class="link" href="#">Opiniones</a>
-        </li>
-        <li class="item">
-          <a class="link" href="#">Contacto</a>
-        </li>
-      </ul>
-      <div class="container">
-        <input type="text" placeholder="Buscar">
-        <div class="btn">
-          <i class="fa fa-search"></i>
-        </div>
-      </div>
-    </nav>
-  </header>
-</body>
+    <header class="cabecera">
+        <nav>
+            <div class="contenedor-logo">
+                <img src="./assets/img/Logo_Greco.svg" alt="Logo de la empresa" class="logo">
+            </div>
+            <ul class="navegacion">
+                <li><a href="#">Inicio</a></li>
+                <li class="dropdown">
+                    <span class="dropdown-button mi-clase">Productos ▾</span>
+                    <ul class="dropdown-content">
+                    <li><a href="#">Option 1</a></li>
+                    <li><a href="#">Option 2</a></li>
+                    <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li class="buscar"><input type="text" placeholder="&#xF002; Buscar"></li>
+                <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <li><a href="#">Crear Cuenta</a></li>
+                <li><a href="#" class="ini">Iniciar Sesión</a></li>
+            </ul>
+          </nav>
+    </header>
+    
 
+  <script src="./JavaScript/sctipt.js"></script> 
+</body>
 </html>

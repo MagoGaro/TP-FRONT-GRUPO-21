@@ -1,27 +1,48 @@
-* {
+*{
   margin: 0;
   padding: 0;
+  font-family: "Font Awesome 6.5.2 Free", url("../assets/fonts/Font-Awesome-6-Free-Regular-400.otf");
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  color: #000;
 }
 
-.nav {
-width: 100%;
-height: 100px;
-background-color: aquamarine;
-display: flex;
-justify-content: space-around;
-text-decoration: none;
-align-items: center;
+
+.buscar{
+padding: 5px;
+height: 5vh;
 }
 
-.nav .list {
-  list-style-type: none;
-  display: flex;
-}
-.nav .item {
-  margin-right: 10px;
+.buscar:focus{
+outline-color: red;
+border-color: red;
 }
 
-.nav .subitem {
-  list-style-type: none;
+.buscar::-moz-focus-inner{
+border-color: red;
 }
 
+input::-webkit-input-placeholder {
+font-family: "Font Awesome 6 Free";
+font-weight: 900;
+color: rgb(0, 0, 0);
+}
+
+input:-moz-placeholder {
+font-family: "Font Awesome 6.5.2 Free", url("../assets/fonts/Font-Awesome-6-Free-Regular-400.otf");
+font-weight: 900;
+text-align: center;
+}
+
+input::-moz-placeholder-shown {
+font-family: "Font Awesome 6.5.2 Free",url("../assets/fonts/Font-Awesome-6-Free-Regular-400.otf");
+font-weight: 900;
+text-align: center;
+}
+
+input:ms-input-placeholder {
+font-family: "Font Awesome 5 Free";
+font-weight: 900;
+text-align: center;
+}
