@@ -1,28 +1,156 @@
+/*Importamos fuente*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Seteamos paleta de colores*/
+:root{
+  --color1:#000000;
+  --color2:#FFFFFF;
+  --color3:#FEC828;
+  --color4:#688272;
+  --color5:#4F4F4F;
+  --color6:#333333;
+  --color7:#1A202C;
+  --color8:#3A3A3A;
+  --color9:#EBEBEB;
+}
+
+/*Estilos Generales*/
 *{
   margin: 0;
   padding: 0;
-  font-family: "Font Awesome 6.5.2 Free", url("../assets/fonts/Font-Awesome-6-Free-Regular-400.otf");
+  font-family:  "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  font-style: normal;
   list-style: none;
   box-sizing: border-box;
   text-decoration: none;
-  color: #000;
+  color: var(--color1);
 }
 
+
+/*Estilos Header*/
+.cabecera{
+  height: 100vh;
+}
+
+/*Estilos Navegación*/
+nav{
+  display: flex;
+  width: 100%;
+  padding: 0pc 5px;
+  background-color: rgba(255, 255, 255,1);
+}
+
+.barra_n{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 8vh;
+  z-index: 4;
+}
+
+.contenedor_logo{
+  width: 30%;
+  text-align: center;
+}
+
+.logo{
+  width: 50%;
+  height: 8vh;
+}
+
+.navegacion{
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navegacion li a:hover{
+  color: var(--color4);
+}
+
+.desplegable_m > .desplegable_btn {
+  padding: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.desplegable_m >.desplegable_btn:hover{
+  color: var(--color4);
+  content: "Productos ▴";
+}
+
+.desplegable_m > .desplegable_content {
+  display: none;
+  position: absolute;
+  background-color: var(--color2);
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.desplegable_m:hover >.desplegable_content {
+  display: block;
+}
+
+.desplegable_content  a{
+  padding: 12px 16px;
+  display: block; 
+}
+
+.cart_m:hover{
+  color: var(--color4);
+}
+
+.buscar > input{
+  border: none;
+  padding: 3px;
+  outline: none;
+}
 
 .buscar{
-padding: 5px;
-height: 5vh;
+  display: flex;
+  width: 17%;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
 }
 
-.buscar:focus{
-outline-color: red;
-border-color: red;
+.buscar_t{
+  width: 100%;
+  height: 5vh;
+  border-radius: 5px;
 }
 
-.buscar::-moz-focus-inner{
-border-color: red;
+.buscar > input:focus{
+  border: 2px solid var(--color4);
+  border-radius: 5px;
+  background-color: var(--color9);
 }
 
+
+.btn_ini{
+  width: 15%;
+  border: 1px solid var(--color4);
+  background-color: var(--color4);
+  text-align: center;
+  border-radius: 5px;
+  color: var(--color2);
+}
+
+.btn_ini > .ini{
+  color: var(--color2);
+}
+
+.btn_ini > .ini:hover{
+  color: var(--color6);
+}
+
+
+/* Para ver la Lupa en diferentes navegadores*/
 input::-webkit-input-placeholder {
 font-family: "Font Awesome 6 Free";
 font-weight: 900;
@@ -42,7 +170,63 @@ text-align: center;
 }
 
 input:ms-input-placeholder {
-font-family: "Font Awesome 5 Free";
+font-family: "Font Awesome 5 Free",url("../assets/fonts/Font-Awesome-6-Free-Regular-400.otf");
 font-weight: 900;
 text-align: center;
+}
+
+/*Estilos Home*/
+.home{
+  display: flex;
+  width: 100%;
+  margin-top: 8vh;
+  background-image: url('../assets/img/3c62d843303afa790fed702940b1ccf1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center bottom;
+  height: 100vh;
+}
+
+.nuevos_productos{
+  margin-top: 10%;
+  margin-left: 5%;
+  height: 55%;
+  width: 45%;
+  padding: 15px;
+  background-color: rgba(255, 255, 255,0.71);
+}
+
+.nuevos_productos > h4{
+  color: var(--color6);
+}
+
+.nuevos_productos > h2{
+  color: var(--color4);
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.nuevos_productos > p{
+  margin-bottom: 20px;
+}
+.btn_nuev_prod{
+  display: block;
+  width: 35%;
+  height: 10%;
+  text-align: center;
+  padding-top: 0.5%;
+}
+.btn_nuev_prod > a{
+  color:  var(--color2);
+}
+
+.btn_home{
+  color: var(--color2);
+}
+
+/*Estilos Contacto*/
+
+.contacto{
+  background-color: blue;
+  height: 100vh;
 }
