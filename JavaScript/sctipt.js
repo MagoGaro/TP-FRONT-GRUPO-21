@@ -1,19 +1,35 @@
-const dropdownButtons = document.querySelectorAll('.dropdown-button');
+//Menu desplegable
+const dropdownButtons = document.querySelectorAll('.desplegable_btn');
 
 dropdownButtons.forEach(button => {
   button.addEventListener('click', () => {
-    const dropdownContent = button.nextElementSibling;
-    dropdownContent.classList.toggle('show');
+    const desplegable_content = button.nextElementSibling;
+    desplegable_content.classList.toggle('show');
   });
 });
 
-/*
-const elemento = document.querySelector('.mi-clase');
 
-elemento.addEventListener('mouseenter', () => {
-  elemento.textContent = "Productos ▴";
+//Efecto Translucido para la barra de menu al hacer scroll
+window.addEventListener('scroll', function() {
+  const navegacion = document.getElementById('barra_na');
+  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+  const valor1 = 'background-color: rgba(255, 255, 255,0.4);'
+  const valor2 = 'background-color: rgba(255, 255, 255,1);';
+
+  if (scrollTop > 0){
+    navegacion.style.cssText = valor1;
+  } else{
+    navegacion.style.cssText = valor2;
+  }
+
+  navegacion.addEventListener('mouseover', () => {
+    navegacion.style.cssText = valor2;
+  });
+
+  navegacion.addEventListener('mouseout', () => {
+    navegacion.style.cssText = valor1;
+  });
+
+
 });
 
-elemento.addEventListener('mouseleave', () => {
-  elemento.textContent = "Productos ▾"; 
-});*/
