@@ -13,10 +13,10 @@
   margin-bottom: 30px;
 }
 
-.center {
-  text-align: center;
-  margin: 50px 0;
-}
-.center {
+.button {
   background-color: #688272;
+  display: flex;
+  justify-content: center;
+  margin: 30px;
+  padding: 10px;
 }
