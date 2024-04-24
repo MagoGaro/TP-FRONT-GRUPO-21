@@ -1,0 +1,19 @@
+.shop {
+  text-align: center;
+  margin: 50px 0;
+}
+.columna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  columns: 4;
+  column-gap: 30px;
+}
+.producto {
+  margin-bottom: 30px;
+}
+
+.center {
+  text-align: center;
+  margin: 50px 0;
+}
