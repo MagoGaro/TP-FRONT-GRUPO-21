@@ -10,13 +10,31 @@
   column-gap: 30px;
 }
 .producto {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
+.nombre {
+  font-size: 20px;
+  margin: 10px 0 0 o;
+}
+
+.descripcion {
+  font-size: 15px;
+  margin: 10px 0;
+}
 .button {
   background-color: #688272;
-  display: block;
+  color: white;
   margin: auto;
-  padding: 11px;
-  border-radius: 5px;
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carrito {
+  color: white;
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
 }
