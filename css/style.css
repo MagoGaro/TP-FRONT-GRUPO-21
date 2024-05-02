@@ -315,10 +315,39 @@ p {
 }
 
 /*Estilos Contacto*/
+.comentarios{
+  margin: 3em;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
 
-.contacto{
-  background-color: blue;
-  height: 100vh;
+.comentarioCliente{
+  width: 300px;
+  padding: 0.7em;
+  background-color: #4f4f4f34;
+  border-radius: 0.5em;
+}
+
+.comentarioCliente p{
+  font-size: 10px;
+}
+
+.datosCliente{
+  display: flex;
+  margin-bottom: 0.5em;
+  margin-left: 0.5em;
+}
+
+.datosCliente img{
+  margin-right: 0.5em;
+  border-radius: 1em;
+  width: 2em;
+  height: 2em;
+}
+
+.datosCliente h4{
+  align-content: center;
 }
 
 /*Estilos Footer*/
