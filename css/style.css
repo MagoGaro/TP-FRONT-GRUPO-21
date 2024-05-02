@@ -322,6 +322,13 @@ p {
   justify-content: space-around;
 }
 
+.comentarios{
+  margin: 3em;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
+
 .comentarioCliente{
   width: 300px;
   padding: 0.7em;
@@ -349,6 +356,7 @@ p {
 .datosCliente h4{
   align-content: center;
 }
+
 
 /*Estilos Footer*/
 .pie{
