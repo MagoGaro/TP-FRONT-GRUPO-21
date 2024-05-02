@@ -224,15 +224,103 @@ text-align: center;
   color: var(--color2);
 }
 
-/*Estilos Contacto*/
-/*
+/*Estilos Producto*/
 
-.contacto{
-  background-color: blue;
-  height: 100vh;
+.producto {
+  min-height: 100vh;
+  width: 100%;
+  padding: 40px 84px;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/img/Rectangle\ 2.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 
-*/
+h2 {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  color: #333333;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+  color: #666666;
+  margin-bottom: 48px;
+}
+
+.ctn-productos {
+  display: flex;
+  gap: 36px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.card-producto {
+  width: 400px;
+  height: auto;
+}
+
+.text-card {
+  font-size: 24px;
+}
+
+/*Estilo Shop*/
+
+.shop-t{
+  min-height: 100vh;
+}
+.shop {
+  text-align: center;
+  margin: 50px 0;
+}
+.columna {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  columns: 4;
+  column-gap: 30px;
+}
+.producto-s {
+  margin-bottom: 40px;
+}
+
+.nombre {
+  font-size: 20px;
+  margin: 10px 0 0 o;
+}
+
+.descripcion {
+  font-size: 15px;
+  margin: 10px 0;
+}
+.button {
+  background-color: #688272;
+  color: white;
+  margin: auto;
+  padding: 18px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.carrito {
+  color: white;
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+
+/*Estilos Contacto*/
+.comentarios{
+  margin: 3em;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+}
 
 #titulos{
   text-align: center;
@@ -291,5 +379,22 @@ text-align: center;
 .datosCliente h4{
   align-content: center;
 }
-/*Estilos Footer*/
 
+
+/*Estilos Footer*/
+.pie{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--color4);
+}
+
+.icono_pie{
+  width: 5%;
+  height: 5%;
+  text-align: center;
+  justify-content: center;
+  background-color: var(--color2);
+  border-radius: 50%;
+  margin: 5px 5px;
+}
