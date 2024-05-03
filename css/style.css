@@ -254,7 +254,7 @@ p {
 
 .ctn-productos {
   display: flex;
-  gap: 36px;
+  gap: 25px;
   flex-wrap: wrap;
   text-align: center;
 }
