@@ -13,7 +13,7 @@ dropdownButtons.forEach(button => {
 window.addEventListener('scroll', function() {
   const navegacion = document.getElementById('barra_na');
   const scrollTop = window.scrollY || document.documentElement.scrollTop;
-  const valor1 = 'background-color: rgba(255, 255, 255,0.4);'
+  const valor1 = 'background-color: rgba(255, 255, 255,0.7);'
   const valor2 = 'background-color: rgba(255, 255, 255,1);';
 
   if (scrollTop > 0){
