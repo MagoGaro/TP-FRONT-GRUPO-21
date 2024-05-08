@@ -38,7 +38,7 @@
 nav{
   display: flex;
   width: 100%;
-  padding: 0pc 5px;
+  padding: 0px 5px;
   background-color: rgba(255, 255, 255,1);
 }
 
@@ -47,13 +47,16 @@ nav{
   top: 0;
   left: 0;
   width: 100%;
-  height: 8vh;
+  height: 10vh;
   z-index: 4;
 }
 
 .contenedor_logo{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 30%;
-  text-align: center;
+  height: 100%;
 }
 
 .logo{
@@ -318,7 +321,12 @@ p {
   margin-left: 10px;
 }
 
-/*Estilos Contacto*/
+/*Estilos Comentarios*/
+.contacto{
+  height: 100vh;
+}
+
+/*Estilos Comentarios*/
 .comentarios{
   margin: 3em;
   height: 200px;
@@ -376,6 +384,13 @@ p {
 .colum-pie-principal{
   width: 50%;
 }
+
+.colum-pie h2{
+  width: 100%;
+  font-size: 1.7rem;
+  text-align: left;
+}
+
 .redes{
   display: flex;
   flex-wrap: wrap;
@@ -398,4 +413,8 @@ p {
   background-color: var(--color2);
   border-radius: 50%;
   margin: 0px 5px;
+}
+
+.lista_pie li{
+  margin: 1.3rem 0px;
 }

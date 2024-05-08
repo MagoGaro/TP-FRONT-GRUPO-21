@@ -26,8 +26,8 @@
                     <li><a href="#">Option 3</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
+                <li><a href="#shop">Tienda</a></li>
+                <li><a href="#contacto">Contacto</a></li>
                 <li class="buscar"><input class="buscar_t" type="text" placeholder="&#xF002; Buscar"></li>
                 <li><a href="#"><i class="fa-solid fa-cart-shopping cart_m"></i></a></li>
                 <li><a href="#">Crear Cuenta</a></li>
@@ -67,12 +67,12 @@
                 </div>
             </div>
         </section>
-        <section class="shop-t">
+        <section class="shop-t" id="shop">
             <h2 class="shop">Shop</h2>
             <div class="columna">
               <div class="producto-s">
                 <div class="producto-1">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 1</h3>
                   <p class="descripcion">Descripcion del producto 1</p>
                 </div>
@@ -80,7 +80,7 @@
         
               <div class="producto-s">
                 <div class="producto-2">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 2</h3>
                   <p class="descripcion">Descripcion del producto 2</p>
                 </div>
@@ -88,7 +88,7 @@
         
               <div class="producto-s">
                 <div class="producto-3">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 3</h3>
                   <p class="descripcion">Descripcion del producto 3</p>
                 </div>
@@ -96,7 +96,7 @@
         
               <div class="producto-s">
                 <div class="producto-4">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 4</h3>
                   <p class="descripcion">Descripcion del producto 4</p>
                 </div>
@@ -104,7 +104,7 @@
         
               <div class="producto-s">
                 <div class="producto-5">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 5</h3>
                   <p class="descripcion">Descripcion del producto 5</p>
                 </div>
@@ -112,7 +112,7 @@
         
               <div class="producto-s">
                 <div class="producto-6">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 6</h3>
                   <p class="descripcion">Descripcion del producto 6</p>
                 </div>
@@ -120,7 +120,7 @@
         
               <div class="producto-s">
                 <div class="producto-7">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 7</h3>
                   <p class="descripcion">Descripcion del producto 7</p>
                 </div>
@@ -128,7 +128,7 @@
         
               <div class="producto-s">
                 <div class="producto-8">
-                  <img src="./assets/img/living.png" />
+                  <img src="./assets/img/living.png" alt="Living">
                   <h3 class="nombre">Producto 8</h3>
                   <p class="descripcion">Descripcion del producto 8</p>
                 </div>
@@ -137,16 +137,17 @@
         
             <button class="button">
               <span>Comprar ahora</span>
-              <img src="./assets/img/icons/carrito-de-compras.png" class="carrito" />
+              <img src="./assets/img/icons/carrito-de-compras.png" class="carrito" alt="carrito-compras">
             </button>
         </section>
 
          <!--   Section Contacto    -->
-         <section class="contacto">
+         <section class="contacto" id="contacto">
+          <h2 class="shop">Contacto</h2>
         </section>
         <!-- Section Comentarios-->
-
-        <section class="comentarios"> 
+        <h2 class="shop">Comentarios</h2> 
+        <section class="comentarios">
             <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
               <article class="datosCliente">
                 <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
@@ -183,19 +184,19 @@
 
     </main>
     <footer class="pie">
-        <section class="colum-pie colum-pie-principal">
-            <article class="redes">
+        <div class="colum-pie colum-pie-principal">
+            <div class="redes">
                 <img src="./assets/img/Logo_Greco.svg" alt="">
                 <p class="text-pie">Our vision is to provide convenience and help increase your sales business.</p>
                 <div class="icono_pie"><i class="fa-brands fa-facebook-f"></i></div>
                 <div class="icono_pie"><i class="fa-brands fa-x-twitter"></i></div>
                 <div class="icono_pie"><i class="fa-brands fa-instagram"></i></div>
                 <p class="text-pie">©2024 Greco. All rights reserved</p>
-            </article>
-        </section> 
+            </div>
+        </div> 
         <section class="colum-pie ">
           <h2>About</h2>
-          <ul>
+          <ul class="lista_pie">
             <li>How It Works</li>
             <li>Featured</li>
             <li>Partnerships</li>
@@ -204,7 +205,7 @@
         </section>
         <section class="colum-pie">
           <h2>Community</h2>
-          <ul>
+          <ul class="lista_pie">
             <li>Events</li>
             <li>Blog</li>
             <li>Podcast</li>
@@ -214,7 +215,7 @@
         </section>
         <section class="colum-pie">
           <h2>Socials</h2>
-          <ul>
+          <ul class="lista_pie">
             <li>Discord</li>
             <li>Instagram</li>
             <li>X</li>
