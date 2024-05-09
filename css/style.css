@@ -317,9 +317,11 @@ p {
 /*Estilos Contacto*/
 .comentarios{
   margin: 3em;
+  width: 300%;
   height: 200px;
   display: flex;
   justify-content: space-around;
+  
 }
 
 #titulos{
@@ -331,6 +333,8 @@ p {
 .seccionComentarios{
   margin: 3em;
   height: 100vh;
+  width: 100%;
+  overflow: hidden;
 }
 
 .tituloComentarios{
@@ -344,11 +348,6 @@ p {
 .tituloComentarios p{
   width: 50vw;
   font-size: 15px;
-}
-
-.comentarios{
-  display: flex;
-  justify-content: space-around;
 }
 
 .comentarioCliente{
