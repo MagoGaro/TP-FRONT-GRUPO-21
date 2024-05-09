@@ -329,7 +329,6 @@ p {
 /*Estilos Comentarios*/
 .comentarios{
   margin: 3em;
-  width: 300%;
   height: 200px;
   display: flex;
   justify-content: space-around;
@@ -345,8 +344,6 @@ p {
 .seccionComentarios{
   margin: 3em;
   height: 100vh;
-  width: 100%;
-  overflow: hidden;
 }
 
 .tituloComentarios{
