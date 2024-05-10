@@ -384,6 +384,7 @@ p {
   grid-column-gap: 25px;
   padding: 45px 0px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .pie-pagina .grupo-1 .box figure {
