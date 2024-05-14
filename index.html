@@ -1,95 +1,526 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dropdown Menu</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="stylesheet" href="./css/style.css">
 
-    <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
+  <title>Greco</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header class="cabecera">
-        <nav class="barra_n" id="barra_na">
-            <div class="contenedor_logo">
-                <img src="./assets/img/Logo_Greco.svg" alt="Logo de la empresa" class="logo">
-            </div>
-            <ul class="navegacion">
-                <li><a href="#">Inicio</a></li>
-                <li class="desplegable_m">
-                    <span class="desplegable_btn mi_clase">Productos ▾</span>
-                    <ul class="desplegable_content">
-                    <li><a href="#">Option 1</a></li>
-                    <li><a href="#">Option 2</a></li>
-                    <li><a href="#">Option 3</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Tienda</a></li>
-                <li><a href="#">Contacto</a></li>
-                <li class="buscar"><input class="buscar_t" type="text" placeholder="&#xF002; Buscar"></li>
-                <li><a href="#"><i class="fa-solid fa-cart-shopping cart_m"></i></a></li>
-                <li><a href="#">Crear Cuenta</a></li>
-                <li class="btn_ini"><a href="#" class="ini">Iniciar Sesión</a></li>
-            </ul>
-          </nav>
-          <section class="home">
-            <div class="nuevos_productos">
-                <h4>Nuevos Productos</h4>
-                <h2>Descubrí todo lo nuevo</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis non blanditiis iste! Laborum adipisci facilis</p>
-                <span class="btn_ini btn_nuev_prod"><a href="#">Comprar Ahora <i class="fa-solid fa-cart-shopping btn_home"></i></a></span>
-            </div>
-          </section>
-    </header>
-    <main>
-        <!--   Section Contacto    -->
-        <section class="contacto">
-        </section>
-        <!-- Section Comentarios-->
-        <section class="seccionComentarios"> 
-            <article class="tituloComentarios">
-                <h3 id="titulos">Comentario de clientes satisfechos</h3> 
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id quod alias modi. Ut, ipsam ipsa necessitatibus in ex cumque libero ad possimus tempora et odit aut dolorum unde autem!</p>
+  <header class="cabecera">
+    <nav class="barra_n" id="barra_na">
+      <div class="contenedor_logo">
+        <img src="./assets/img/Logo_Greco.svg" alt="Logo de la empresa" class="logo">
+      </div>
+      <ul class="navegacion">
+        <li><a href="#">Inicio</a></li>
+        <li class="desplegable_m">
+          <span class="desplegable_btn mi_clase">Productos ▾</span>
+          <ul class="desplegable_content">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#shop">Tienda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li class="buscar"><input class="buscar_t" type="text" placeholder="&#xF002; Buscar"></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping cart_m"></i></a></li>
+        <li><a href="#">Crear Cuenta</a></li>
+        <li class="btn_ini"><a href="#" class="ini">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+    <section class="home">
+      <div class="nuevos_productos">
+        <h4>Nuevos Productos</h4>
+        <h2>Descubrí todo lo nuevo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis non blanditiis iste! Laborum adipisci
+          facilis</p>
+        <span class="btn_ini btn_nuev_prod"><a href="#">Comprar Ahora <i
+              class="fa-solid fa-cart-shopping btn_home"></i></a></span>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="producto">
+      <div>
+        <h2>Nuestros Productos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="ctn-productos">
+        <div class="card-producto">
+          <img src="./assets/img/bacha01.png" alt="bacha">
+          <span class="text-card">Línea Baño</span>
+        </div>
+
+        <div class="card-producto">
+          <img src="./assets/img/mesa.png" alt="bacha">
+          <span class="text-card">Línea Jardín</span>
+        </div>
+
+        <div class="card-producto">
+          <img src="./assets/img/macetas.png" alt="bacha">
+          <span class="text-card">Línea Home</span>
+        </div>
+      </div>
+    </section>
+    <section class="shop-t" id="shop">
+      <h2 class="shop">Shop</h2>
+      <div class="columna">
+        <div class="producto-s">
+          <div class="producto-1">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 1</h3>
+            <p class="descripcion">Descripcion del producto 1</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-2">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 2</h3>
+            <p class="descripcion">Descripcion del producto 2</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-3">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 3</h3>
+            <p class="descripcion">Descripcion del producto 3</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-4">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 4</h3>
+            <p class="descripcion">Descripcion del producto 4</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-5">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 5</h3>
+            <p class="descripcion">Descripcion del producto 5</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-6">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 6</h3>
+            <p class="descripcion">Descripcion del producto 6</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-7">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 7</h3>
+            <p class="descripcion">Descripcion del producto 7</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-8">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 8</h3>
+            <p class="descripcion">Descripcion del producto 8</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="button">
+        <span>Comprar ahora</span>
+        <img src="./assets/img/icons/carrito-de-compras.png" class="carrito" alt="carrito-compras">
+      </button>
+    </section>
+
+    <!--   Section Contacto    -->
+    <section class="contacto" id="contacto">
+      <h2 class="shop">Contacto</h2>
+    </section>
+   <!-- Section Comentarios-->
+   <section class="seccionComentarios"> 
+    <article class="tituloComentarios">
+        <h3 id="titulos">Comentario de clientes satisfechos</h3> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id quod alias modi. Ut, ipsam ipsa necessitatibus in ex cumque libero ad possimus tempora et odit aut dolorum unde autem!</p>
+    </article>
+      <article class="comentarios">
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
             </article>
-            <article class="comentarios">
-                <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
-                    <article class="datosCliente">
-                     <img src="./assets/img/bacha01.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
-                     <article>
-                       <h4>Nombre del usuario</h4>
-                       <p>Ubicacion</p>
-                     </article>
-                   </article>
-                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
-                   </article>
-                 <article class="comentarioCliente">
-                   <article class="datosCliente">
-                     <img src="./assets/img/bacha01.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
-                     <article>
-                       <h4>Nombre del usuario</h4>
-                       <p>Ubicacion</p>
-                     </article>
-                   </article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
-                 </article>
-                 <article class="comentarioCliente">
-                   <article class="datosCliente">
-                     <img src="./assets/img/bacha01.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
-                     <article>
-                       <h4>Nombre del usuario</h4>
-                       <p>Ubicacion</p>
-                     </article>
-                   </article>
-                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
-                 </article>
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
             </article>
-            
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
-  <script src="./JavaScript/sctipt.js"></script> 
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
+            </article>
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+      </article>
+</section>
+  </main>
+
+  <!-- Pie de Pagina -->
+  <footer class="pie-pagina">
+
+    <div class="grupo-1">
+      <div class="box-logo">
+        <figure>
+          <img src="/assets/img/Logo_Greco.svg" alt="Logotipo de la Empresa">
+        </figure>
+      </div>
+
+      <div class="box-contacto">
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Teléfono: (54-11) 4649-1122 </p>
+          <p>Dirección: Av. Juan B. Justo 9200 - CP 1408 - CABA - Argentina</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.326212512489!2d-58.45233832350582!3d-34.54529505441648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental!5e0!3m2!1ses-419!2sar!4v1715360628277!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="red-social">
+            <a class="fa-brands fa-square-facebook" target="_blank"></a>
+            <a class="fa-brands fa-square-x-twitter" target="_blank"></a>
+            <a class="fa-brands fa-square-instagram" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="box">
+        <div class="container-form">
+          <h3>Regístrate para más información</h3>
+          <form action="/suscripcion" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Copy de derecho de autor -->
+    <div class="grupo-2">
+      <p>© 2024 Derechos Reservados - Greco Objetos en Concreto</p>
+    </div>
+
+  </footer>
+
+  <script src="./JavaScript/sctipt.js"></script>
 </body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+  <title>Greco</title>
+
+  <link rel="stylesheet" href="./css/style.css">
+
+  <script src="https://kit.fontawesome.com/216116f202.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="cabecera">
+    <nav class="barra_n" id="barra_na">
+      <div class="contenedor_logo">
+        <img src="./assets/img/Logo_Greco.svg" alt="Logo de la empresa" class="logo">
+      </div>
+      <ul class="navegacion">
+        <li><a href="#">Inicio</a></li>
+        <li class="desplegable_m">
+          <span class="desplegable_btn mi_clase">Productos ▾</span>
+          <ul class="desplegable_content">
+            <li><a href="#">Option 1</a></li>
+            <li><a href="#">Option 2</a></li>
+            <li><a href="#">Option 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#shop">Tienda</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li class="buscar"><input class="buscar_t" type="text" placeholder="&#xF002; Buscar"></li>
+        <li><a href="#"><i class="fa-solid fa-cart-shopping cart_m"></i></a></li>
+        <li><a href="#">Crear Cuenta</a></li>
+        <li class="btn_ini"><a href="#" class="ini">Iniciar Sesión</a></li>
+      </ul>
+    </nav>
+    <section class="home">
+      <div class="nuevos_productos">
+        <h4>Nuevos Productos</h4>
+        <h2>Descubrí todo lo nuevo</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum reiciendis non blanditiis iste! Laborum adipisci
+          facilis</p>
+        <span class="btn_ini btn_nuev_prod"><a href="#">Comprar Ahora <i
+              class="fa-solid fa-cart-shopping btn_home"></i></a></span>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="producto">
+      <div>
+        <h2>Nuestros Productos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+
+      <div class="ctn-productos">
+        <div class="card-producto">
+          <img src="./assets/img/bacha01.png" alt="bacha">
+          <span class="text-card">Línea Baño</span>
+        </div>
+
+        <div class="card-producto">
+          <img src="./assets/img/mesa.png" alt="bacha">
+          <span class="text-card">Línea Jardín</span>
+        </div>
+
+        <div class="card-producto">
+          <img src="./assets/img/macetas.png" alt="bacha">
+          <span class="text-card">Línea Home</span>
+        </div>
+      </div>
+    </section>
+    <section class="shop-t" id="shop">
+      <h2 class="shop">Shop</h2>
+      <div class="columna">
+        <div class="producto-s">
+          <div class="producto-1">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 1</h3>
+            <p class="descripcion">Descripcion del producto 1</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-2">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 2</h3>
+            <p class="descripcion">Descripcion del producto 2</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-3">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 3</h3>
+            <p class="descripcion">Descripcion del producto 3</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-4">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 4</h3>
+            <p class="descripcion">Descripcion del producto 4</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-5">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 5</h3>
+            <p class="descripcion">Descripcion del producto 5</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-6">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 6</h3>
+            <p class="descripcion">Descripcion del producto 6</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-7">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 7</h3>
+            <p class="descripcion">Descripcion del producto 7</p>
+          </div>
+        </div>
+
+        <div class="producto-s">
+          <div class="producto-8">
+            <img src="./assets/img/living.png" alt="Living">
+            <h3 class="nombre">Producto 8</h3>
+            <p class="descripcion">Descripcion del producto 8</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="button">
+        <span>Comprar ahora</span>
+        <img src="./assets/img/icons/carrito-de-compras.png" class="carrito" alt="carrito-compras">
+      </button>
+    </section>
+
+    <!--   Section Contacto    -->
+    <section class="contacto" id="contacto">
+      <h2 class="shop">Contacto</h2>
+    </section>
+   <!-- Section Comentarios-->
+   <section class="seccionComentarios"> 
+    <article class="tituloComentarios">
+        <h3 id="titulos">Comentario de clientes satisfechos</h3> 
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore id quod alias modi. Ut, ipsam ipsa necessitatibus in ex cumque libero ad possimus tempora et odit aut dolorum unde autem!</p>
+    </article>
+      <article class="comentarios">
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
+            </article>
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
+            </article>
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+          <article class="comentarioCliente"> <!-- COMENTARIO DE CLIENTE-->
+            <article class="datosCliente">
+              <img src="./assets/img/avatar-user.png" alt="Imagen de usuario"> <!-- INSERTAR IMG DEL USUARIO !-->
+              <article>
+                <h4>Nombre del usuario</h4>
+                <p class="ubicacion">Ubicacion</p>
+              </article>
+              <article class="valoracion">
+                <h4>5.0</h4>
+              </article>
+            </article>
+            <p class="textoComentario">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta accusantium possimus minus fuga perferendis repellendus quo commodi saepe soluta doloremque?</p>
+          </article>
+      </article>
+</section>
+  </main>
+
+  <!-- Pie de Pagina -->
+  <footer class="pie-pagina">
+
+    <div class="grupo-1">
+      <div class="box-logo">
+        <figure>
+          <img src="/assets/img/Logo_Greco.svg" alt="Logotipo de la Empresa">
+        </figure>
+      </div>
+
+      <div class="box-contacto">
+        <div class="footer-contacto">
+          <h3>Contacto</h3>
+          <p>Teléfono: (54-11) 4649-1122 </p>
+          <p>Dirección: Av. Juan B. Justo 9200 - CP 1408 - CABA - Argentina</p>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.326212512489!2d-58.45233832350582!3d-34.54529505441648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental!5e0!3m2!1ses-419!2sar!4v1715360628277!5m2!1ses-419!2sar"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="red-social">
+            <a class="fa-brands fa-square-facebook" target="_blank"></a>
+            <a class="fa-brands fa-square-x-twitter" target="_blank"></a>
+            <a class="fa-brands fa-square-instagram" target="_blank"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Formulario de contacto -->
+      <div class="box">
+        <div class="container-form">
+          <h3>Regístrate para más información</h3>
+          <form action="/suscripcion" method="post">
+
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Copy de derecho de autor -->
+    <div class="grupo-2">
+      <p>© 2024 Derechos Reservados - Greco Objetos en Concreto</p>
+    </div>
+
+  </footer>
+
+  <script src="./JavaScript/sctipt.js"></script>
+</body>
+
 </html>
