@@ -36,11 +36,7 @@ window.addEventListener('scroll', function() {
 //Validar formulario
 
 const form = document.querySelector(".form")
-<<<<<<< HEAD
-let nombre = document.querySelector("#nombre")
-=======
 // let nombre = document.querySelector("#nombre")
->>>>>>> avances-Nacho
 
 form.addEventListener("submit", (event)=> {
   event.preventDefault();
@@ -49,13 +45,6 @@ form.addEventListener("submit", (event)=> {
 
   if (title.length >=3){
   } else {
-<<<<<<< HEAD
-    alert("Tiene que tener 3 caracteres o más")
-  }
-
-});
-
-=======
     // alert("Tiene que tener 3 caracteres o más")
     
     let errorAlert = document.querySelector(".error");
@@ -111,18 +100,3 @@ btnRight.addEventListener("click", function(){
 btnLeft.addEventListener("click", function(){
     prev();
 })
-
-
-let re = /^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|usal)\.(?:|com|edu)+$/;
-    if (email == "") {
-        name_error3.innerHTML = "Correo Requerido";
-        name_error3.style.color = "red";
-        iemail.style.borderColor = "red";
-        rvalue = false;
-    } else if (!re.exec(document.getElementById('email').value)) {
-        name_error3.innerHTML = "Correo no valido";
-        name_error3.style.color = "red";
-        iemail.style.borderColor = "red";
-        rvalue = false;
-   }
->>>>>>> avances-Nacho
