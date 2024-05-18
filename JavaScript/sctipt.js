@@ -100,3 +100,17 @@ btnRight.addEventListener("click", function(){
 btnLeft.addEventListener("click", function(){
     prev();
 })
+
+
+let re = /^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|usal)\.(?:|com|edu)+$/;
+    if (email == "") {
+        name_error3.innerHTML = "Correo Requerido";
+        name_error3.style.color = "red";
+        iemail.style.borderColor = "red";
+        rvalue = false;
+    } else if (!re.exec(document.getElementById('email').value)) {
+        name_error3.innerHTML = "Correo no valido";
+        name_error3.style.color = "red";
+        iemail.style.borderColor = "red";
+        rvalue = false;
+   }

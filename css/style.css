@@ -346,13 +346,14 @@ p {
 }
 
 .seccionComentarios{
-  margin-bottom: 10em;
   width: 100%;
+  min-height: 100vh;
 }
 
 .comentarios{
   overflow: hidden;
   width: 100%;
+  height: 300px;
   align-items: center;
   position: relative;
 }
@@ -652,6 +653,10 @@ button:hover {
   width: 230px;
 }  
 
+.comentarioCliente{
+
+}
+
 .datosCliente{
   margin: 0;
 }
@@ -665,11 +670,9 @@ button:hover {
 }
 
 .sliderButton{
-  margin-top: 0.5em;
+  margin: 0;
   position: absolute;
   top: 85%;
-  transform: translateY(0);
-  /* left: -82.5%; */
 }
 
 .slider_btn_left{
@@ -718,6 +721,10 @@ button:hover {
   height: 800px;
 }
 
+.sliderButton{
+  margin-top: 2em;
+}
+
 .slider_btn_left{
   left: 30%;
 }
@@ -726,4 +733,10 @@ button:hover {
   right: 30%;
 }
 
+
+/* Card Products */
+
+.card-producto img{
+  width: 200px;
+}
 }
