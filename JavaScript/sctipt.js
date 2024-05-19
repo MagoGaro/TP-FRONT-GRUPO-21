@@ -34,7 +34,7 @@ window.addEventListener('scroll', function() {
 });
 
 //Validar formulario
-
+/*
 const form = document.querySelector(".form")
 // let nombre = document.querySelector("#nombre")
 
@@ -55,7 +55,7 @@ form.addEventListener("submit", (event)=> {
       errorAlert.textContent = "";
     },2000 );
   }
-});
+});*/
 
 // Slider Comentarios
 
@@ -100,3 +100,61 @@ btnRight.addEventListener("click", function(){
 btnLeft.addEventListener("click", function(){
     prev();
 })
+
+function validandoAndo() {
+  let name = document.getElementById('nombre').value;
+  let iname = document.getElementById('nombre');
+  let email = document.getElementById('email').value;
+  let iemail = document.getElementById('email');
+  let description = document.getElementById('mensaje').value;
+  let idescription = document.getElementById('mensaje');
+
+  let name_error = document.querySelector('#error1');
+  let name_error2 = document.querySelector('#error2');
+  let name_error3 = document.querySelector('#error3');
+
+
+  //validacion nombre
+  if (name == "") {
+      name_error.innerHTML = "Nombre Requerido";
+      name_error.style.color = "red";
+      iname.style.borderColor = "red";
+
+  } else {
+      name_error.innerHTML = "";
+      iname.style.borderColor = "green";
+  }
+
+  //validar correo
+  let re = /^\w+([\.-]?\w+)*@(?:|hotmail|outlook|yahoo|live|gmail|usal)\.(?:|com|edu)+$/;
+  if (email == "") {
+      name_error2.innerHTML = "Correo Requerido";
+      name_error2.style.color = "red";
+      iemail.style.borderColor = "red";
+
+  } else if (!re.exec(document.getElementById('email').value)) {
+      name_error2.innerHTML = "Correo no valido";
+      name_error2.style.color = "red";
+      iemail.style.borderColor = "red";
+  } else {
+      name_error2.innerHTML = "";
+      iemail.style.borderColor = "green";
+  }
+
+  //validar comentario
+  if (description == "") {
+      name_error3.innerHTML = "Comentario Requerido";
+      name_error3.style.color = "red";
+      idescription.style.borderColor = "red";
+      rvalue = false;
+  } else if ((description).length < 50) {
+      name_error3.innerHTML = "Comentario demasiado corta";
+      name_error3.style.color = "red";
+      idescription.style.borderColor = "red";
+  } else {
+      name_error3.innerHTML = "";
+      idescription.style.borderColor = "green";
+  }
+
+
+}

@@ -309,7 +309,7 @@
     <div class="grupo-1">
       <div class="box-logo">
         <figure>
-          <img src="/assets/img/Logo_Greco.svg" alt="Logotipo de la Empresa">
+          <img src="./assets/img/Logo_Greco.svg" alt="Logotipo de la Empresa">
         </figure>
       </div>
 
@@ -333,15 +333,17 @@
 
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required>
-            <div class="error"></div>
+            <div class="error" id="error1"></div>
 
             <label for="email">Correo Electrónico:</label>
             <input type="email" id="email" name="email" required>
+            <div class="error" id="error2"></div>
 
             <label for="mensaje">Mensaje:</label>
             <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+            <div class="error" id="error3"></div>
 
-            <button type="submit">Enviar</button>
+            <button type="button" onclick="validandoAndo()">Enviar</button>
           </form>
         </div>
       </div>
