@@ -112,11 +112,12 @@ nav{
   border: none;
   padding: 3px;
   outline: none;
+  background-color: var(--color9);
 }
 
 .buscar{
   display: flex;
-  width: 17%;
+  width: 25%;
   padding: 5px;
   border-radius: 5px;
   align-items: center;
@@ -233,7 +234,7 @@ text-align: center;
 .btn_nuev_prod{
   display: block;
   width: 35%;
-  height: 10%;
+  height: 15%;
   text-align: center;
   align-content: center;
   border-radius: 12px;
@@ -332,8 +333,8 @@ p {
   margin: 10px 0;
 }
 .button {
-  background-color: #688272;
-  color: white;
+  background-color: var(--color4);
+  color: var(--color2);
   margin: auto;
   padding: 18px;
   border-radius: 10px;
@@ -342,7 +343,7 @@ p {
   justify-content: center;
 }
 .carrito {
-  color: white;
+  color: var(--color2);
   height: 18px;
   width: 18px;
   margin-left: 10px;
