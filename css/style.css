@@ -137,11 +137,15 @@ nav{
 
 .btn_ini{
   width: 15%;
+  height: 50%;
   border: 1px solid var(--color4);
   background-color: var(--color4);
   text-align: center;
+  align-content: center;
   border-radius: 5px;
   color: var(--color2);
+  border-radius: 12px;
+
 }
 
 .btn_ini > .ini{
@@ -199,30 +203,42 @@ text-align: center;
   margin-left: 5%;
   height: 55%;
   width: 45%;
-  padding: 15px;
-  background-color: rgba(255, 255, 255,0.71);
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.71);
+  align-content: center;
+  border-radius: 10px;
 }
 
 .nuevos_productos > h4{
   color: var(--color6);
+  font-size: 1rem;
 }
 
 .nuevos_productos > h2{
   color: var(--color4);
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 3.5rem;
+  text-align: left;
+  line-height: 4rem;
 }
 
 .nuevos_productos > p{
   margin-bottom: 20px;
+  font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    color: #666666;
+    text-align: start;
 }
 .btn_nuev_prod{
   display: block;
   width: 35%;
   height: 10%;
   text-align: center;
-  padding-top: 0.5%;
+  align-content: center;
+  border-radius: 12px;
 }
+
 .btn_nuev_prod > a{
   color:  var(--color2);
 }
@@ -234,7 +250,7 @@ text-align: center;
 /*Estilos Producto*/
 
 .producto {
-  margin-top: 1em;
+  margin-top: 2.5em;
   min-height: 100vh;
   width: 100%;
   display: flex;
@@ -242,7 +258,7 @@ text-align: center;
   background-image: url("/assets/img/Rectangle\ 2.png");
   background-size: 90%;
   background-repeat: no-repeat;
-  background-position: left bottom;
+  background-position: left center;
 }
 
 h2 {
@@ -264,6 +280,7 @@ p {
   flex-direction: row;
   justify-content: space-around;
   text-align: center;
+  margin-top: 3rem;
 }
 
 .card-producto{
@@ -347,7 +364,6 @@ p {
 
 .seccionComentarios{
   width: 100%;
-  min-height: 100vh;
 }
 
 .comentarios{
