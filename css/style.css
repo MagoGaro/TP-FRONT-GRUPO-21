@@ -42,6 +42,13 @@ nav{
   background-color: rgba(255, 255, 255,1);
 }
 
+.bar-btn{
+  font-size: 1.5rem;
+  color: #000;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
 .barra_n{
   position: fixed;
   top: 0;
@@ -135,6 +142,9 @@ nav{
   background-color: var(--color9);
 }
 
+#check{
+  display: none;
+}
 
 .btn_ini{
   width: 15%;
@@ -583,6 +593,13 @@ form {
   flex-direction: column;
 }
 
+.checkbox-form {
+  color: var(--color2);
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  font-weight: 400;
+}
+
 label {
   margin-top: 10px;
   color: var(--color2);
@@ -594,6 +611,7 @@ textarea {
   padding: 5px;
   border: 1px solid var(--color2);
   border-radius: 5px;
+  
 }
 
 button {
@@ -617,7 +635,7 @@ button:hover {
 
 }
 
-
+/* 
 @media (max-width: 600px) {
   .footer-container {
     flex-direction: column;
@@ -627,7 +645,7 @@ button:hover {
   .footer-logo img {
     margin-bottom: 20px;
   }
-}
+} */
 
 
 /* MEDIA QUERY */
@@ -637,18 +655,20 @@ button:hover {
 @media screen and (max-width: 1024px){
   /*Menu*/
 
+  .bar-btn{
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
   nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-  .bar-btn{
-    font-size: 1.5rem;
-    color: #000;
-    margin-right: 20px;
-    cursor: pointer;
-}
+
 #check{
   display: none;
 }
@@ -696,23 +716,23 @@ button:hover {
 
   /*Home*/
 .nuevos_productos{
-  width: 90%;
+  width: 60%;
 }
 
 .nuevos_productos h4{
-  font-size: 2.5rem;
-}
-
-.nuevos_productos h2{
-  font-size: 4rem;
-}
-
-.nuevos_productos p{
   font-size: 1.5rem;
 }
 
+.nuevos_productos h2{
+  font-size: 3rem;
+}
+
+.nuevos_productos p{
+  font-size: 1rem;
+}
+
 .btn_nuev_prod{
-  width: 20%;
+  width: 40%;
 }
 
 
@@ -740,6 +760,14 @@ button:hover {
 
 @media screen and (max-width: 768px){
 /*Homw*/
+
+.bar-btn{
+  font-size: 1.5rem;
+  color: #000;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
   .nuevos_productos{
     width: 50%;
   }
@@ -804,6 +832,14 @@ button:hover {
   
 
 /*Home*/
+
+.bar-btn{
+  font-size: 1.5rem;
+  color: #000;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
 .nuevos_productos{
   width: 90%;
 }
