@@ -635,6 +635,86 @@ button:hover {
 /* media 1024 */
 
 @media screen and (max-width: 1024px){
+  /*Menu*/
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  .bar-btn{
+    font-size: 1.5rem;
+    color: #000;
+    margin-right: 20px;
+    cursor: pointer;
+}
+#check{
+  display: none;
+}
+
+.navegacion{
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  top: 50px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .95);
+  text-align: center;
+  z-index: 4;
+}
+
+.navegacion li{
+  display: none;
+  width: 100%;
+  transition: all .5s;
+}
+
+.navegacion .buscar_t{
+  display: none;
+}
+
+.mi_clase, .cart_m{
+  color: #fff;
+}
+
+.navegacion li a{
+  color: #fff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#check:checked ~ .navegacion{
+  height: 100vh;
+}
+
+#check:checked ~ .navegacion li{
+  display: block;
+  transition: all .5s;
+}
+
+  /*Home*/
+.nuevos_productos{
+  width: 90%;
+}
+
+.nuevos_productos h4{
+  font-size: 2.5rem;
+}
+
+.nuevos_productos h2{
+  font-size: 4rem;
+}
+
+.nuevos_productos p{
+  font-size: 1.5rem;
+}
+
+.btn_nuev_prod{
+  width: 20%;
+}
+
 
 /* Productos */
 
@@ -659,6 +739,25 @@ button:hover {
 /* media 768 */
 
 @media screen and (max-width: 768px){
+/*Homw*/
+  .nuevos_productos{
+    width: 50%;
+  }
+  
+  .nuevos_productos h4{
+    font-size: 1rem;
+  }
+  
+  .nuevos_productos h2{
+    font-size: 1.5rem;
+  }
+  
+  .nuevos_productos p{
+    font-size: 0.7rem;
+  }
+  .btn_nuev_prod{
+    width: 50%;
+  }
 
   /* Seccion Comentarios */
 
@@ -701,6 +800,29 @@ button:hover {
 /* media 320px */
 
 @media screen and (max-width: 320px){
+
+  
+
+/*Home*/
+.nuevos_productos{
+  width: 90%;
+}
+
+.nuevos_productos h4{
+  font-size: 1rem;
+}
+
+.nuevos_productos h2{
+  font-size: 1.5rem;
+}
+
+.nuevos_productos p{
+  font-size: 0.7rem;
+}
+
+.btn_nuev_prod{
+  width: 100%;
+}
 
   /* seccion comentarios */
 
