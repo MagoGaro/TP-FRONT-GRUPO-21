@@ -47,6 +47,7 @@ nav{
   color: #000;
   margin-right: 20px;
   cursor: pointer;
+  display: none;
 }
 
 .barra_n{
@@ -98,7 +99,7 @@ nav{
   position: absolute;
   background-color: var(--color2);
   min-width: 50px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 2px 0px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
@@ -148,7 +149,7 @@ nav{
 
 .btn_ini{
   width: 15%;
-  height: 50%;
+  height: 35px;
   border: 1px solid var(--color4);
   background-color: var(--color4);
   text-align: center;
@@ -206,6 +207,7 @@ text-align: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center bottom;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -660,6 +662,11 @@ button:hover {
     color: #000;
     margin-right: 20px;
     cursor: pointer;
+    display: flex;
+  }
+
+  .desplegable_m >.desplegable_btn{
+    color: #000;
   }
 
   nav{
@@ -674,12 +681,13 @@ button:hover {
 }
 
 .navegacion{
+  margin-top: 1em;
   position: fixed;
   display: flex;
   flex-wrap: wrap;
   top: 50px;
   width: 100%;
-  background-color: rgba(0, 0, 0, .95);
+  background-color: rgba(255, 255, 255,1);
   text-align: center;
   z-index: 4;
 }
@@ -690,28 +698,44 @@ button:hover {
   transition: all .5s;
 }
 
-.navegacion .buscar_t{
-  display: none;
-}
-
-.mi_clase, .cart_m{
-  color: #fff;
-}
-
 .navegacion li a{
-  color: #fff;
+  color: #000;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
 }
 
+.desplegable_m:hover > .desplegable_content{
+  position:relative;
+  display: none;
+}
+
+.desplegable_m > .desplegable_content.show{
+  display: block;
+}
+
+.desplegable_content.show a{
+  font-size: 0.8rem;
+}
+
+.buscar > .buscar_t{
+  display: none;
+}
+
+#hidden-cart a{
+  display: none;
+}
+
 #check:checked ~ .navegacion{
-  height: 100vh;
+  width: 300px;
+  right: 0;
 }
 
 #check:checked ~ .navegacion li{
   display: block;
-  transition: all .5s;
+  padding: 3px;
+  transition:all 1s;
+  border-radius: 0;
 }
 
   /*Home*/
@@ -858,6 +882,27 @@ button:hover {
 
 .btn_nuev_prod{
   width: 100%;
+}
+
+#check:checked ~ .navegacion {
+  width: 100%;
+  right: 0;
+}
+
+.navegacion{
+  margin-top: 0;
+}
+
+.navegacion li a{
+  font-size: 0.8rem;
+}
+
+.desplegable_m >.desplegable_btn, .desplegable_btn:hover{
+  font-size: 0.8rem;
+}
+
+.desplegable_content.show li a{
+  font-size: 0.7rem;
 }
 
   /* seccion comentarios */
