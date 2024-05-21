@@ -45,7 +45,6 @@ nav{
 .bar-btn{
   font-size: 1.5rem;
   color: #000;
-  margin-right: 20px;
   cursor: pointer;
   display: none;
 }
@@ -168,6 +167,9 @@ nav{
   color: var(--color6);
 }
 
+.items_externos{
+  display: none;
+}
 
 /* Para ver la Lupa en diferentes navegadores*/
 input::-webkit-input-placeholder {
@@ -333,11 +335,12 @@ p {
 }
 .producto-s {
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .nombre {
   font-size: 20px;
-  margin: 10px 0 0 o;
+  margin-top: 10px;
 }
 
 .descripcion {
@@ -665,6 +668,22 @@ button:hover {
     display: flex;
   }
 
+  .items_externos{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 35%;
+  }
+
+.buscar_externo{
+  background-color: var(--color9);
+  margin-right: 1em;
+}
+
+.fa-bars{
+  font-size: 30px;
+}
+
   .desplegable_m >.desplegable_btn{
     color: #000;
   }
@@ -753,10 +772,13 @@ button:hover {
 
 .nuevos_productos p{
   font-size: 1rem;
+  margin-bottom: 2em;
+  margin-top: 2em;
 }
 
 .btn_nuev_prod{
   width: 40%;
+  height: 60px;
 }
 
 
@@ -788,8 +810,11 @@ button:hover {
 .bar-btn{
   font-size: 1.5rem;
   color: #000;
-  margin-right: 20px;
   cursor: pointer;
+}
+
+.fa-bars{
+  font-size: 30PX;
 }
 
   .nuevos_productos{
@@ -801,14 +826,17 @@ button:hover {
   }
   
   .nuevos_productos h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
+    line-height: 3rem;
   }
   
   .nuevos_productos p{
     font-size: 0.7rem;
   }
   .btn_nuev_prod{
-    width: 50%;
+    width: 80%;
+    height: 15%;
+    margin-left: 2em;
   }
 
   /* Seccion Comentarios */
@@ -860,12 +888,28 @@ button:hover {
 .bar-btn{
   font-size: 1.5rem;
   color: #000;
-  margin-right: 20px;
+  margin: 0;
+  margin-right: 10px;
   cursor: pointer;
+}
+
+.items_externos{
+  right: 30%;
+}
+
+.buscar_externo{
+  align-items: center;
+  width: 100px;
+}
+
+.hidden_cart{
+  display: none;
 }
 
 .nuevos_productos{
   width: 90%;
+  height: 400px;
+  margin-top: 5em;
 }
 
 .nuevos_productos h4{
@@ -874,6 +918,7 @@ button:hover {
 
 .nuevos_productos h2{
   font-size: 1.5rem;
+  line-height: 1.5em;
 }
 
 .nuevos_productos p{
@@ -882,11 +927,17 @@ button:hover {
 
 .btn_nuev_prod{
   width: 100%;
+  height: 50px;
+  margin: 0;
 }
 
 #check:checked ~ .navegacion {
   width: 100%;
   right: 0;
+}
+
+.fa-bars{
+  font-size: 20px;
 }
 
 .navegacion{
